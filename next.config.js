@@ -1,15 +1,18 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
-  compiler: {
-    styledComponents: true,
-  },
+  trailingSlash: true,
   experimental: {
     appDir: true,
+    serverActions: true,
+  },
+  images: {
+    loader: "akamai",
+    path: "/",
   },
   swcMinify: true,
   trailingSlash: true,
-  output: 'export',
+  output: "export",
 };
 
 module.exports = nextConfig;

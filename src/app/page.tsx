@@ -1,8 +1,8 @@
 import React from "react";
-import Home from "./_home/page";
+import LoginScreen from "./_login/page";
 
 const Main = () => {
-  return <Home />;
+  return <LoginScreen />;
 };
 
 export default Main;

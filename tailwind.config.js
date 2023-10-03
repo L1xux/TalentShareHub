@@ -4,11 +4,17 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        nanum: "var(--nanum-pen-script-font)",
-        dongle: "var(--dongle-font)",
+        roboto: "var(--roboto-script-font)",
+        poorstory: "var(--poor-story-font)",
       },
       fontSize: {
         h: ["0.6rem", { lineHeight: "16px" }],
+      },
+      backgroundColor: {
+        main: "#7ABEEF",
+      },
+      textColor: {
+        main: "#7ABEEF",
       },
       screens: {
         xsm: "400px",
