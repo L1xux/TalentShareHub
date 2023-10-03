@@ -12,7 +12,7 @@ const LoginScreen = () => {
       <p className="text-[24px] h-[30px]">{"나눔의 기쁨"}</p>
       <Image
         loader={imageLoader}
-        src={"/image/logo.png"}
+        src={`${process.env.NEXT_PUBLIC_TEST_URL}/image/logo.png`}
         className="pt-[3rem] object-contain"
         width={"200"}
         height={"200"}
@@ -21,7 +21,7 @@ const LoginScreen = () => {
       <div className="mt-[5rem] login_box">
         <Image
           loader={imageLoader}
-          src={"/image/google_logo.png"}
+          src={`${process.env.NEXT_PUBLIC_TEST_URL}/image/google_logo.png`}
           className="object-contain mr-[15px]"
           width={"40"}
           height={"40"}
@@ -34,7 +34,7 @@ const LoginScreen = () => {
       <div className="mt-[1.5rem] login_box">
         <Image
           loader={imageLoader}
-          src={"/image/kakao_logo.png"}
+          src={`${process.env.NEXT_PUBLIC_TEST_URL}/image/kakao_logo.png`}
           className="object-contain mr-[15px]"
           width={"40"}
           height={"40"}
