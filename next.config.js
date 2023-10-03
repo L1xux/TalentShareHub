@@ -7,7 +7,7 @@ const nextConfig = {
   },
   images: {
     loader: "akamai",
-    path: "/",
+    path: "./src/app/_lib/loader/imageLoader.ts",
   },
   swcMinify: true,
   trailingSlash: true,
