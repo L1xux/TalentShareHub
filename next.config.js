@@ -4,7 +4,6 @@ const nextConfig = {
   trailingSlash: true,
   experimental: {
     appDir: true,
-    serverActions: true,
   },
   images: {
     loader: "akamai",
