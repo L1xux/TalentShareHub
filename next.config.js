@@ -2,6 +2,9 @@
 
 const nextConfig = {
   trailingSlash: true,
+  compiler: {
+    styledComponents: true,
+  },
   experimental: {
     appDir: true,
   },

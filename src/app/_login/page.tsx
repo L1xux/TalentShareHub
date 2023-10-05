@@ -44,7 +44,7 @@ const LoginScreen = () => {
           {"카카오 계정으로 로그인하기"}
         </p>
       </div>
-      <div className="mt-10 font-roboto">
+      <div className="mt-10 font-inter">
         <Link
           href="/home"
           className="text-[16px] font-bold text-main cursor-pointer"
