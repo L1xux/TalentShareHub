@@ -1,10 +1,8 @@
 import React from "react";
-import HomeToolbar from "./_components/toolbar/HomeToolbar";
 
 const HomeLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="font-inter flex flex-col w-screen h-screen">
-      <HomeToolbar />
+    <div className="font-inter flex flex-col items-center w-screen h-screen">
       {children}
     </div>
   );

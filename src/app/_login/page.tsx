@@ -47,7 +47,7 @@ const LoginScreen = () => {
       <div className="mt-10 font-inter">
         <Link
           href="/home"
-          className="text-[16px] font-bold text-main cursor-pointer"
+          className="text-[16px] font-bold text-main cursor-auto"
         >
           {"둘러보기"}
         </Link>

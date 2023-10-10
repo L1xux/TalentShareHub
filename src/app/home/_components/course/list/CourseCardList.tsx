@@ -1,6 +1,6 @@
 "use client";
 
-import { CourseState } from "@/app/_redux/reducers/course";
+import { CourseState } from "@/app/_redux/reducers/home/course";
 import React, { Suspense, useEffect } from "react";
 import CourseCard from "../card/CourseCard";
 

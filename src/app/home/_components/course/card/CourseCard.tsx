@@ -1,7 +1,7 @@
 "use client";
 
 import imageLoader from "@/app/_lib/loader/imageLoader";
-import { CourseState } from "@/app/_redux/reducers/course";
+import { CourseState } from "@/app/_redux/reducers/home/course";
 import Image from "next/image";
 import React, { useEffect } from "react";
 
@@ -27,10 +27,6 @@ const CourseCard = ({
   maxCapacity,
   currentCapacity,
 }: CourseState) => {
-  useEffect(() => {
-    console.log("startDate is", startDate);
-  }, []);
-
   return (
     <div className="p-2 flex w-full h-max min-h-36 rounded-lg shadow-main">
       <div className="flex w-full justify-between">

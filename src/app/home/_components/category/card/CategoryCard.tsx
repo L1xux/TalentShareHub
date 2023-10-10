@@ -23,7 +23,7 @@ const CategoryCard = ({
     <div
       className={`px-6 py-2 flex flex-col justify-center items-center ${
         isClicked ? "bg-main" : "bg-white"
-      } rounded-[10px] cursor-pointer shadow`}
+      } rounded-[10px] cursor-auto shadow`}
       onClick={onClickCard}
     >
       <Image

@@ -31,6 +31,7 @@ const courseSlice = createSlice({
   reducers: {
     update: (state: CourseState, action: PayloadAction<CourseState>) => {
       state = { ...state, ...action.payload };
+      return state;
     },
   },
 });

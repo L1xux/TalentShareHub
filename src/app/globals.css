@@ -1,8 +1,6 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 * {
   box-sizing: border-box;
@@ -10,19 +8,18 @@
   margin: 0;
 }
 
-
 .login_box {
-  @apply p-3 flex flex-shrink-0 justify-center items-center w-4/5 bg-main rounded-[10px] cursor-pointer
+  @apply p-3 flex flex-shrink-0 justify-center items-center w-4/5 bg-main rounded-[10px] cursor-auto;
 }
 
 .card {
-  @apply relative flex flex-shrink-0 flex-col shadow-md justify-center w-max h-max border border-gray-400 rounded-lg overflow-hidden
+  @apply relative flex flex-shrink-0 flex-col shadow-md justify-center w-max h-max border border-gray-400 rounded-lg overflow-hidden;
 }
 
 .badge {
-  @apply bg-slate-300 text-xs uppercase font-bold rounded-full p-1 absolute top-0 ml-1 mt-1
+  @apply bg-slate-300 text-xs uppercase font-bold rounded-full p-1 absolute top-0 ml-1 mt-1;
 }
 
 .btn {
-  @apply rounded-full py-2 px-3 uppercase text-xs font-bold cursor-pointer tracking-wider
+  @apply rounded-full py-2 px-3 uppercase text-xs font-bold cursor-auto tracking-wider;
 }
