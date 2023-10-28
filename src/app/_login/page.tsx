@@ -5,7 +5,7 @@ import React from "react";
 import Link from "next/link";
 import imageLoader from "../_lib/loader/imageLoader";
 
-const LoginScreen = () => {
+const LoginPage = () => {
   return (
     <div className="font-poorstory flex flex-col w-screen min-h-screen justify-center items-center overflow-y-auto">
       <p className="text-[24px] h-[30px]">{"무료 재능기부 허브"}</p>
@@ -18,7 +18,10 @@ const LoginScreen = () => {
         height={"200"}
         alt="logo"
       />
-      <div className="mt-[5rem] login_box">
+      <Link
+        href={"http://211.115.222.246:5050/oauth2/authorization/google"}
+        className="mt-[5rem] login_box"
+      >
         <Image
           loader={imageLoader}
           src={`${process.env.NEXT_PUBLIC_TEST_URL}/image/google_logo.png`}
@@ -30,7 +33,7 @@ const LoginScreen = () => {
         <p className="text-center text-white text-xl">
           {"구글 계정으로 로그인하기"}
         </p>
-      </div>
+      </Link>
       <div className="mt-[1.5rem] login_box">
         <Image
           loader={imageLoader}
@@ -56,4 +59,4 @@ const LoginScreen = () => {
   );
 };
 
-export default LoginScreen;
+export default LoginPage;

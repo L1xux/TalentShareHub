@@ -25,8 +25,8 @@ const CourseCardList = () => {
       startDate: new Date("2023/04/25"),
       endDate: new Date("2023/05/09"),
       rating: 4.5,
-      maxCapacity: 1,
-      currentCapacity: 2,
+      maxCapacity: 2,
+      currentCapacity: 1,
     },
     {
       id: 3,

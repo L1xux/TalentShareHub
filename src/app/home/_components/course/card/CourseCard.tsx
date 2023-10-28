@@ -3,18 +3,9 @@
 import imageLoader from "@/app/_lib/loader/imageLoader";
 import { CourseState } from "@/app/_redux/reducers/home/course";
 import Image from "next/image";
-import React, { useEffect } from "react";
+import { useRouter } from "next/navigation";
 
-/**
-           *   id: number;
-  img: string;
-  title: string;
-  teacher: string;
-  startDate: Date | null;
-  endDate: Date | null;
-  maxCapacity: number;
-  currentCapacity: number;
-           */
+import React, { useEffect } from "react";
 
 const CourseCard = ({
   id,
@@ -27,8 +18,17 @@ const CourseCard = ({
   maxCapacity,
   currentCapacity,
 }: CourseState) => {
+  const router = useRouter();
+
+  const onClickCard = () => {
+    router.push(`/course/detail/${id}`);
+  };
+
   return (
-    <div className="p-2 flex w-full h-max min-h-36 rounded-lg shadow-main">
+    <div
+      className="p-2 flex w-full h-max min-h-36 rounded-lg shadow-main"
+      onClick={onClickCard}
+    >
       <div className="flex w-full justify-between">
         <div className="flex flex-col w-[70%]">
           <p className="text-2xl font-bold line-clamp-1">{title}</p>
@@ -53,11 +53,11 @@ const CourseCard = ({
             <Image
               loader={imageLoader}
               src={`${process.env.NEXT_PUBLIC_TEST_URL}/image/icon/human.png`}
-              alt={"rating"}
+              alt={"maximum capacity & current applicants"}
               width={18}
               height={18}
             />
-            <p className="text-sm">{"4.9"}</p>
+            <p className="text-sm">{`${currentCapacity} / ${maxCapacity}명`}</p>
           </div>
           <p className="mt-3 font-poorstory text-sm font-normal">
             {`${teacher} 선생님`}

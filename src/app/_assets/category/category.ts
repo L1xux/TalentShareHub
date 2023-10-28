@@ -9,7 +9,7 @@ const category = [
   {
     id: 2,
     name: "수학",
-    icon: `/image/icon/mathematics.png`,
+    icon: `${process.env.NEXT_PUBLIC_TEST_URL}/image/icon/mathematics.png`,
   },
   // develop
   {

@@ -9,7 +9,7 @@ import { useSelector } from "react-redux";
 import { RootState } from "../_redux/stores/store";
 import FloatingHomeSection from "./_components/floating/FloatingHomeSection";
 
-const Home = () => {
+const HomePage = () => {
   const homeDesignStore = useSelector((state: RootState) => state.homeDesign);
 
   return (
@@ -29,4 +29,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;
