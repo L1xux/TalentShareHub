@@ -19,7 +19,7 @@ const LoginPage = () => {
         alt="logo"
       />
       <Link
-        href={"http://211.115.222.246:5050/oauth2/authorization/google"}
+        href={"https://211.115.222.246:5050/oauth2/authorization/google"}
         className="mt-[5rem] login_box"
       >
         <Image
